@@ -1,0 +1,91 @@
+Task Management System (Full Stack)
+
+A production-style full stack Task Management System built using FastAPI, PostgreSQL, and React.
+This project demonstrates secure authentication, role-based access control, scalable architecture, and modern frontend practices.
+
+📌 Overview
+
+This application allows users to register, authenticate securely using JWT, and manage tasks through a full CRUD interface.
+Admins can manage all users and tasks, while normal users can manage only their own tasks.
+
+The project follows industry backend architecture, secure coding practices, and modern React development patterns.
+
+Architecture
+
+React (Frontend)
+     ↓
+FastAPI (Backend REST API)
+     ↓
+PostgreSQL (Database)
+
+✨ Features
+Authentication & Authorization
+JWT-based authentication
+Password hashing using bcrypt
+Role-based access control (Admin / User)
+Secure token validation on protected routes
+
+📋 Task Management
+Create, Read, Update, Delete tasks
+Task priority & status management
+Search and filtering support
+Pagination support
+
+🛡 Security
+Input validation using Pydantic
+Secure password storage with salt hashing
+
+📱 Frontend Experience
+Responsive UI (Mobile + Desktop)
+Protected routes
+Real-time success/error feedback
+Clean dashboard interface
+
+Tech Stack
+Backend:-
+| Technology        | Purpose                        |
+| ----------------- | ------------------------------ |
+| FastAPI           | High performance API framework |
+| PostgreSQL        | Relational database            |
+| SQLAlchemy 2.0    | ORM                            |
+| Pydantic v2       | Data validation                |
+| JWT (python-jose) | Authentication                 |
+| bcrypt (passlib)  | Password hashing               |
+| Uvicorn           | ASGI server                    |
+
+Frontend:-
+| Technology      | Purpose           |
+| --------------- | ----------------- |
+| React 18        | UI Framework      |
+| Vite            | Build Tool        |
+| React Router v6 | Routing           |
+| Axios           | API communication |
+| CSS3            | Styling           |
+
+Project Structure
+task-management-api/
+│
+├── backend/
+│   ├── app/
+│   │   ├── api/v1/
+│   │   ├── models/
+│   │   ├── schemas/
+│   │   ├── utils/
+│   │   ├── config.py
+│   │   └── database.py
+│   ├── main.py
+│   ├── init_db.py
+│   └── requirements.txt
+│
+├── frontend/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── services/
+│   │   └── App.jsx
+│   └── package.json
+│
+├── README.md
+├── QUICKSTART.md
+├── SCALABILITY.md
+└── Postman Collection
